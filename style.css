@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  border: 3px solid red;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  background-image: url(images/bg-pattern-top-mobile.svg),
+    url(images/bg-pattern-bottom-mobile.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: top, bottom;
+}
+
+.grid-container {
+  min-height: 100vh;
+  border: 2px solid black;
+  max-width: 1200px;
+  margin: auto;
+}
+.container {
+  display: grid;
+  text-align: center;
+  gap: 10%;
+}
+.rating-background {
+  background-color: rgba(188, 124, 204, 0.212);
+  padding: 5px;
+  border-radius: 5px;
+}
+.rating-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  line-height: 1.5;
+}
+.testimonial-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
