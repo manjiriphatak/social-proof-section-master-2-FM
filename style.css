@@ -1,3 +1,11 @@
+:root {
+  --Very-Dark-Magenta: hsl(300, 43%, 22%);
+  --Soft-Pink: hsl(333, 80%, 67%);
+  --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+  --Light-Grayish-Magenta: hsl(300, 24%, 96%);
+  --white: hsl(0, 0%, 100%);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -10,44 +18,91 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  padding: 15px;
+  padding: 0px 17px;
   background-image: url(images/bg-pattern-top-mobile.svg),
     url(images/bg-pattern-bottom-mobile.svg);
   background-repeat: no-repeat, no-repeat;
   background-position: top, bottom;
+  font-size: 0.9rem;
+  font-family: "Spartan", sans-serif;
 }
 
 .grid-container {
-  min-height: 100vh;
   border: 2px solid black;
   max-width: 1200px;
-  margin: auto;
+  padding-top: 80px;
+  min-height: 100vh;
 }
 .container {
   display: grid;
   text-align: center;
-  gap: 10%;
+  gap: 40px;
 }
+
+.heading {
+  font-size: 1.9rem;
+  color: var(--Very-Dark-Magenta);
+  font-weight: 700;
+}
+.description {
+  margin-top: 1rem;
+  color: var(--Dark-Grayish-Magenta);
+  line-height: 1.5;
+  font-weight: 400;
+}
+
 .rating-background {
-  background-color: rgba(188, 124, 204, 0.212);
-  padding: 5px;
-  border-radius: 5px;
+  background-color: var(--Light-Grayish-Magenta);
+  padding: 10px;
+  border-radius: 10px;
 }
 .rating-section {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 1rem;
   line-height: 1.5;
+  color: var(--Very-Dark-Magenta);
+  font-weight: 700;
 }
+/*
 .testimonial-section {
   display: flex;
   flex-direction: column;
   gap: 10px;
+}*/
+.testimonial-section {
+  text-align: left;
+  color: var(--Light-Grayish-Magenta);
 }
-
+.testimonial-text {
+  margin-top: 2rem;
+}
+.testimonial-card-style {
+  padding: 2rem;
+  background-color: var(--Very-Dark-Magenta);
+}
+.profile-section {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+.profile-img {
+  border-radius: 50%;
+  max-width: 50px;
+  margin-right: 20px;
+}
+.profile-name-section p {
+  color: var(--Soft-Pink);
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+.profile-name-section h2 {
+  font-size: 1rem;
+}
 .attribution {
   font-size: 11px;
   text-align: center;
+  margin: 5px;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
