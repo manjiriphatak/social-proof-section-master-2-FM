@@ -14,7 +14,6 @@
 }
 
 body {
-  border: 3px solid red;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -28,11 +27,9 @@ body {
 }
 
 .grid-container {
-  border: 2px solid black;
-  max-width: 1200px;
+  min-width: 1200px;
   padding-top: 80px;
   padding-bottom: 80px;
-  min-height: 100vh;
 }
 .container {
   display: grid;
@@ -115,16 +112,19 @@ body {
   color: hsl(228, 45%, 44%);
 }
 
-@media (min-width: 1240px) {
+@media (min-width: 1024px) {
   body {
     background-image: url(images/bg-pattern-top-desktop.svg),
       url(images/bg-pattern-bottom-desktop.svg);
     background-repeat: no-repeat, no-repeat;
     background-position: top left, bottom right;
+    align-items: center;
   }
 
   .grid-container {
-    align-self: center;
+    height: 95vh;
+    display: grid;
+    align-content: center;
     max-width: 1200px;
     margin: 0;
     padding: 0;
@@ -134,24 +134,69 @@ body {
     grid-template-areas:
       "heading rating"
       "testimonial testimonial";
+    gap: 80px 130px;
   }
+  /*heading */
+
   .heading-section {
     grid-area: heading;
+    text-align: left;
   }
+  .heading {
+    font-size: 3rem;
+  }
+  .description {
+    font-size: 1rem;
+  }
+
+  /*rating section*/
+
   .rating-section {
     grid-area: rating;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
+  .rating-background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1 0%;
+    min-width: 400px;
+  }
+  .rating-1 {
+    align-self: flex-start;
+  }
+  .rating-2 {
+    align-self: center;
+  }
+  .rating-3 {
+    align-self: flex-end;
+  }
+  .stars {
+    margin-right: 25px;
+  }
+  /*testimonials */
+
   .testimonial-section {
     grid-area: testimonial;
     flex-direction: row;
+    min-height: 320px;
+    align-items: center;
+    gap: 2rem;
   }
   .testimonial-card-1 {
-    justify-self: start;
+    padding: 40px 50px;
+    flex: 1 1 0%;
+    align-self: flex-start;
   }
   .testimonial-card-2 {
-    justify-self: center;
+    padding: 40px 50px;
+    align-self: center;
+    flex: 1 1 0%;
   }
   .testimonial-card-3 {
-    justify-self: end;
+    padding: 40px 50px;
+    align-self: flex-end;
+    flex: 1 1 0%;
   }
 }
