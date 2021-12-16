@@ -17,7 +17,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  padding: 0px 17px;
+  padding: 1.3rem;
   background-image: url(images/bg-pattern-top-mobile.svg),
     url(images/bg-pattern-bottom-mobile.svg);
   background-repeat: no-repeat, no-repeat;
@@ -27,14 +27,14 @@ body {
 }
 
 .grid-container {
-  max-width: 1200px;
-  padding-top: 80px;
-  padding-bottom: 80px;
+  max-width: 30rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 .container {
   display: grid;
   text-align: center;
-  gap: 40px;
+  gap: 2.5rem;
 }
 
 .heading {
@@ -51,8 +51,8 @@ body {
 
 .rating-background {
   background-color: var(--Light-Grayish-Magenta);
-  padding: 10px;
-  border-radius: 10px;
+  padding: 0.8rem;
+  border-radius: 0.7rem;
 }
 .rating-section {
   display: flex;
@@ -78,7 +78,8 @@ body {
 .testimonial-card-style {
   padding: 2rem 1.9rem;
   background-color: var(--Very-Dark-Magenta);
-  border-radius: 10px;
+  border-radius: 0.7rem;
+  height: 100%;
 }
 .profile-section {
   display: flex;
@@ -87,8 +88,8 @@ body {
 }
 .profile-img {
   border-radius: 50%;
-  max-width: 50px;
-  margin-right: 20px;
+  max-width: 3rem;
+  margin-right: 1.7rem;
 }
 .profile-name-section p {
   color: var(--Soft-Pink);
@@ -99,9 +100,9 @@ body {
   font-size: 0.9rem;
 }
 .attribution {
-  font-size: 11px;
+  font-size: 0.7rem;
   text-align: center;
-  margin: 5px;
+  margin: 0.3rem;
   color: var(--Dark-Grayish-Magenta);
 }
 .attribution a {
@@ -173,23 +174,23 @@ body {
   .testimonial-section {
     grid-area: testimonial;
     flex-direction: row;
-    min-height: 320px;
+
     align-items: center;
     gap: 2rem;
   }
   .testimonial-card-1 {
-    padding: 40px 50px;
+    padding: 2rem 3rem;
     flex: 1 1 0%;
-    align-self: flex-start;
   }
   .testimonial-card-2 {
-    padding: 40px 50px;
-    align-self: center;
+    padding: 2rem 3rem;
+    transform: translateY(1.5rem);
     flex: 1 1 0%;
   }
   .testimonial-card-3 {
-    padding: 40px 50px;
-    align-self: flex-end;
+    padding: 2rem 3rem;
+    transform: translateY(3rem);
+
     flex: 1 1 0%;
   }
 }
