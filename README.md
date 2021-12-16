@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: https://www.frontendmentor.io/solutions/socialproofsection-ZP1tKxCpX
 - Live Site URL: https://social-proof-component-2-fm.netlify.app/
 
 ## My process
